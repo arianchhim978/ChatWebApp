@@ -1,0 +1,53 @@
+
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+        <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+        
+        <!-- Your meta tags, title, and CSS links -->
+    </head>
+    <body>
+        <div class="container">
+            <div class="flex">
+                <h1>Arian's ChatApp</h1>
+                <button onclick="modal()" class="border"><img src='icons8-hamburger-menu-50 (1).png'></button>
+            </div>
+            <div id="textbox">
+
+            </div>
+            <div id="a" class="bottom">
+                <ul>
+                    <!-- Add an id to the list item for easier selection -->
+                    <li id="signInSignUp">Sign In / SignUp</li>
+                </ul>
+            </div>
+            <div class="container3">
+                <textarea id="textarea"></textarea>
+                <button class='a' onclick="logTextareaContent()"><img src='icons8-sent-48.png'></button>
+            </div>
+        </div>
+        <script  >
+           
+            
+           
+            function modal() {
+    let a = document.getElementById("a");
+    if (a.style.display === 'none' || a.style.display === '') {
+        a.style.display = 'block';
+    } else {
+        a.style.display = 'none';
+    }
+            }
+        </script>
+<script type="module" src="js.js"></script>
+        
+    </body>
+    </html>
